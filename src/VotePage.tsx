@@ -11,7 +11,7 @@ const VotePage = () => {
 
   const [selectedVote, setSelectedVote] = useState(null);
 
-  const handleVoteChange = (vote) => {
+  const handleVoteChange = (vote: any) => {
     setSelectedVote(vote);
   };
 
@@ -21,11 +21,11 @@ const VotePage = () => {
   };
 
   return (
-    <div className="vote-page">
+    <div className='vote-page'>
       <h1>Vota per l'esibizione 1</h1>
-      <div className="design-choices">
-        <div className="design-option">
-          <img src="path-to-modern-house-image.jpg" alt="Modern House Design" />
+      <div className='design-choices'>
+        <div className='design-option'>
+          <img src='path-to-modern-house-image.jpg' alt='Modern House Design' />
           <h2>Modern House Design</h2>
           <p>Team: Modern Artisans</p>
           <p>
@@ -34,8 +34,8 @@ const VotePage = () => {
             functionality.
           </p>
         </div>
-        <div className="design-option">
-          <img src="path-to-garden-shed-image.jpg" alt="Garden Shed Design" />
+        <div className='design-option'>
+          <img src='path-to-garden-shed-image.jpg' alt='Garden Shed Design' />
           <h2>Garden Shed Design</h2>
           <p>Team: Green Fingers</p>
           <p>
@@ -44,7 +44,7 @@ const VotePage = () => {
           </p>
         </div>
       </div>
-      <div className="vote-slider">
+      <div className='vote-slider'>
         {[6, 7, 8, 9, 10].map((vote) => (
           <button
             key={vote}
@@ -55,10 +55,10 @@ const VotePage = () => {
           </button>
         ))}
       </div>
-      <button className="submit-button" onClick={submitVote}>
+      <button className='submit-button' onClick={submitVote}>
         Submit vote
       </button>
-      <button className="cancel-button">Cancel</button>
+      <button className='cancel-button'>Cancel</button>
     </div>
   );
 };
