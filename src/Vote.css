@@ -1,0 +1,128 @@
+.vote-page {
+  font-family: 'Arial', sans-serif;
+}
+
+.design-choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.design-option {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.design-option img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.vote-slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.vote-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.vote-button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+/* General button styling */
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Add responsiveness to the design options */
+@media (max-width: 768px) {
+  .design-choices {
+    flex-direction: column;
+  }
+
+  .design-option {
+    margin-bottom: 20px;
+  }
+}
+
+/* Add some space around the buttons and align them */
+.vote-slider {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Adjust the image sizes for a responsive layout */
+.design-option img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure that the vote buttons highlight when selected */
+.vote-button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Add a bit of shadow for depth (optional) */
+.design-option,
+.vote-button,
+.submit-button,
+.cancel-button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure that the layout takes up the full view height and centers content */
+.vote-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
